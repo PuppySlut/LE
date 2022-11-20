@@ -11,7 +11,7 @@ const Landing = (props) => {
       <Typography variant="h5" align="center">
         Lesbian Education
       </Typography>
-      <Typography align="center">
+      <Typography align="center" className="my-3">
         Welcome to Lesbian Education, a small Choose your own adventure that has
         been thrown together over quite some time on{" "}
         <a
@@ -34,15 +34,27 @@ const Landing = (props) => {
         link to the project.
       </Typography>
       <br />
-      <Typography align="center">
+      <Typography align="center" className="my-3">
+        Want to give feedback? I will probably check out whever this was posted,
+        but you can also find me on{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://bdsmlr.com/blog/MostlyLesbianLewds"
+        >
+          BDSMLR!
+        </a>
+      </Typography>
+      <br />
+      <Typography align="center" className="my-3">
         Just to make it clear this game includes adult material, do not continue
         if you are not of legal age to consume such content in your region.
       </Typography>
       <br />
-      <Typography align="center">
+      <Typography align="center" className="my-3">
         As you might already have deducted, this game focuses heavily on
         Lesbians, mostly girl on girl, though there is a wide variety of kinks
-        such as incest, cosplay, and a couple of scenes features Dickgirls.
+        such as incest, cosplay, and a couple of scenes feature dicked girls.
       </Typography>
       <br />
       <Button
