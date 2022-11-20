@@ -110,6 +110,7 @@ function Morning(props) {
             size="large"
             variant="contained"
             className="my-3"
+            disabled
             onClick={() => {
               props.poppy();
             }}
@@ -123,6 +124,7 @@ function Morning(props) {
             size="large"
             variant="contained"
             className="my-3"
+            disabled
             onClick={() => {
               props.mary();
             }}
@@ -153,6 +155,7 @@ function Morning(props) {
               size="large"
               variant="contained"
               className="my-3"
+              disabled
               onClick={() => {
                 props.guard();
               }}

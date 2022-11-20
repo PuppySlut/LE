@@ -15,7 +15,7 @@ import Layout from "./components/Layout";
 import AbbyMain from "./components/Abby/AbbyMain";
 
 function App() {
-  const [area, setArea] = useState("morning"); //"landing"
+  const [area, setArea] = useState("landing"); //"landing"
   const [firstName, setFN] = useState("Candy");
   const [lastName, setLN] = useState("Cane");
   const [mom, setMN] = useState("Sugar");
