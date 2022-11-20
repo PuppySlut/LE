@@ -24,7 +24,11 @@ const Landing = (props) => {
         . If you wanna add to the story and not worry about coding, simply add
         it on CHYOA, and I will be sure to integrate it. If you don't mind
         coding here is the{" "}
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/PuppySlut/LE">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/PuppySlut/LE"
+        >
           github
         </a>{" "}
         link to the project.
