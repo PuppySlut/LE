@@ -79,12 +79,10 @@ const Intro = (props) => {
           setArea(a);
         }}
         blonde={() => {
-          props.setBimbo(1);
           setArea("bimbo");
           props.setNN("Bimbo");
         }}
         lifeguard={() => {
-          props.setCosplay(variables.cosplay + 1);
           setArea("lifeguard");
           props.setNN("Cosplay cunt");
         }}
