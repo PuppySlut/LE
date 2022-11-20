@@ -4,6 +4,7 @@ import MomClassIntroSecond from "./MomClassIntroSecond";
 import MomIntroFirst from "./MomIntroFirst";
 import MomIntroSecond from "./MomIntroSecond";
 import MomSecondClass from "./MomSecondClass";
+import MomSecondClassFinish from "./MomSecondClassFinish";
 import MomSecondClassFollowup from "./MomSecondClassFollowup";
 
 const MomMain = (props) => {
@@ -76,6 +77,17 @@ const MomMain = (props) => {
           {...props}
           next={() => {
             setTime(time + 1);
+          }}
+        />
+      );
+    } else if (time === 3) {
+      return (
+        <MomSecondClassFinish
+          {...props}
+          next={() => {
+            props.setMomProg(momProg + 1);
+            props.setArea("evening");
+            props.setNN("Mould model");
           }}
         />
       );
