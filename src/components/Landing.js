@@ -40,7 +40,7 @@ const Landing = (props) => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://bdsmlr.com/blog/MostlyLesbianLewds"
+          href="https://mostlylesbianlewds.bdsmlr.com/"
         >
           BDSMLR!
         </a>
