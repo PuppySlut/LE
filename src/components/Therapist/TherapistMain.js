@@ -6,6 +6,8 @@ import HypnoBear from "./HypnoBear";
 import Cheerleader from "./Cheerleader1";
 import Cheerleader2 from "./Cheerleader2";
 import Cheerleader3 from "./Cheerleader3";
+import Football from "./Football";
+import Football2 from "./Football2";
 
 const TherapistMain = (props) => {
   const { variables } = props;
@@ -59,8 +61,6 @@ const TherapistMain = (props) => {
       />
     );
   } else if (hypno === 2) {
-    console.log(time);
-    console.log(props);
     if (time === 1) {
       return (
         <Cheerleader
@@ -73,6 +73,37 @@ const TherapistMain = (props) => {
     } else if (time === 2) {
       return (
         <Cheerleader2
+          {...props}
+          next={() => {
+            setTime(time + 1);
+          }}
+        />
+      );
+    } else {
+      return (
+        <Cheerleader3
+          {...props}
+          next={() => {
+            props.setHypno(hypno + 1);
+            props.setArea("evening");
+            props.setNN("Cheer toy");
+          }}
+        />
+      );
+    }
+  } else if (hypno === 3) {
+    if (time === 1) {
+      return (
+        <Football
+          {...props}
+          next={() => {
+            setTime(time + 1);
+          }}
+        />
+      );
+    } else if (time === 2) {
+      return (
+        <Football2
           {...props}
           next={() => {
             setTime(time + 1);

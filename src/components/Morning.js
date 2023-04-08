@@ -71,6 +71,19 @@ function Morning(props) {
             >
               Maybe you should explore some of your classes?
             </Button>
+          ) : variables.hypno > 2 ? (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              onClick={() => {
+                props.therapist();
+              }}
+              disabled={variables.hypno > 3}
+            >
+              Go to the cheerleader training
+            </Button>
           ) : (
             <Button
               fullWidth

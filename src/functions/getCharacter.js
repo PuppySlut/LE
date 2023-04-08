@@ -50,6 +50,7 @@ import { Vid } from "../elements/Video";
 import jill from "./../resources/img/Jill.jpg";
 import jill2 from "./../resources/img/jill2.jpg";
 import jill3 from "./../resources/img/jill3.jpg";
+import rose from "./../resources/img/rose.jpg";
 
 export const getSec = (text, mood) => {
   return (
@@ -1472,6 +1473,68 @@ export const getTeddy = (text, mood) => {
             src={teddy}
             className="mx-auto d-block"
             alt="Secretary"
+            fluid
+            roundedCircle
+          />
+        </Col>
+        <Col xs={1}></Col>
+      </Row>
+    </Box>
+  );
+};
+export const getRose = (text, mood) => {
+  return (
+    <Box
+      sx={{
+        backgroundColor: "#264653",
+        boxShadow: 1,
+        border: 4,
+        borderRadius: 4,
+        p: 2,
+        m: 2,
+        borderColor: "#e76f51",
+      }}
+    >
+      <Row>
+        <Col>
+          <Box
+            sx={{
+              backgroundColor: "#2a9d8f",
+              borderRadius: 4,
+              p: 2,
+              m: 2,
+            }}
+          >
+            <Typography
+              variant="h6"
+              className="text-center"
+              sx={{
+                color: "#e9c46a",
+                fontFamily: "Emilys Candy",
+              }}
+            >
+              Rose
+            </Typography>
+          </Box>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Typography
+            className="text-center"
+            sx={{
+              color: "#e9c46a",
+              fontFamily: "Emilys Candy",
+            }}
+          >
+            {text}
+          </Typography>
+        </Col>
+        <Col xs={3}>
+          <Image
+            src={rose}
+            className="mx-auto d-block"
+            alt="Random Student"
             fluid
             roundedCircle
           />
