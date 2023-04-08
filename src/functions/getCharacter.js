@@ -47,6 +47,9 @@ import "@fontsource/mochiy-pop-one";
 import "@fontsource/milonga";
 import "@fontsource/oleo-script";
 import { Vid } from "../elements/Video";
+import jill from "./../resources/img/Jill.jpg";
+import jill2 from "./../resources/img/jill2.jpg";
+import jill3 from "./../resources/img/jill3.jpg";
 
 export const getSec = (text, mood) => {
   return (
@@ -104,6 +107,87 @@ export const getSec = (text, mood) => {
             fluid
             roundedCircle
           />
+        </Col>
+        <Col xs={1}></Col>
+      </Row>
+    </Box>
+  );
+};
+
+export const getJill = (text, mood) => {
+  return (
+    <Box
+      sx={{
+        backgroundColor: "#3A476C",
+        boxShadow: 1,
+        border: 4,
+        borderRadius: 4,
+        p: 2,
+        m: 2,
+        borderColor: "#EEABC4",
+      }}
+    >
+      <Row>
+        <Col>
+          <Box
+            sx={{
+              backgroundColor: "#90A9B7",
+              borderRadius: 4,
+              p: 2,
+              m: 2,
+            }}
+          >
+            <Typography
+              variant="h6"
+              className="text-center"
+              sx={{
+                color: "#e2fcef",
+                fontFamily: "baskervville",
+              }}
+            >
+              Jill
+            </Typography>
+          </Box>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Typography
+            className="text-center"
+            sx={{
+              color: "#EFE039",
+              fontFamily: "baskervville",
+            }}
+          >
+            {text}
+          </Typography>
+        </Col>
+        <Col xs={3}>
+          {mood === "naked" ? (
+            <Image
+              src={jill2}
+              className="mx-auto d-block"
+              alt="Jill"
+              fluid
+              roundedCircle
+            />
+          ) : mood === "student" ? (
+            <Image
+              src={jill3}
+              className="mx-auto d-block"
+              alt="Jill"
+              fluid
+              roundedCircle
+            />
+          ) : (
+            <Image
+              src={jill}
+              className="mx-auto d-block"
+              alt="Jill"
+              fluid
+              roundedCircle
+            />
+          )}
         </Col>
         <Col xs={1}></Col>
       </Row>

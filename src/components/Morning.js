@@ -61,18 +61,30 @@ function Morning(props) {
           </Button>
         </Col>
         <Col>
-          <Button
-            fullWidth
-            size="large"
-            variant="contained"
-            className="my-3"
-            onClick={() => {
-              props.therapist();
-            }}
-            disabled={variables.hypno > 1}
-          >
-            Visit the therapist
-          </Button>
+          {variables.hypno === 2 && variables.wetvalleyOp < 3 ? (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              disabled={true}
+            >
+              Maybe you should explore some of your classes?
+            </Button>
+          ) : (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              onClick={() => {
+                props.therapist();
+              }}
+              disabled={variables.hypno > 2}
+            >
+              Visit the therapist
+            </Button>
+          )}
         </Col>
         <Col>
           <Button
