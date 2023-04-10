@@ -8,6 +8,8 @@ import Cheerleader2 from "./Cheerleader2";
 import Cheerleader3 from "./Cheerleader3";
 import Football from "./Football";
 import Football2 from "./Football2";
+import Football3 from "./Football3";
+import Football4 from "./Football4";
 
 const TherapistMain = (props) => {
   const { variables } = props;
@@ -110,14 +112,23 @@ const TherapistMain = (props) => {
           }}
         />
       );
+    } else if (time === 3) {
+      return (
+        <Football3
+          {...props}
+          next={() => {
+            setTime(time + 1);
+          }}
+        />
+      );
     } else {
       return (
-        <Cheerleader3
+        <Football4
           {...props}
           next={() => {
             props.setHypno(hypno + 1);
             props.setArea("evening");
-            props.setNN("Cheer toy");
+            props.setNN("Football slut");
           }}
         />
       );

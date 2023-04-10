@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import { Container } from "react-bootstrap";
 import { Img } from "../../elements/Image";
 import cheer from "../../resources/img/cheer/2.jpg";
+import hypno from "../../resources/img/hypno/20.gif";
 import jill from "../../resources/img/jill2.jpg";
 import { getNickName } from "../../functions/getNickName";
 import { getJill } from "../../functions/getCharacter";
@@ -30,6 +31,9 @@ function Cheerleader(props) {
         "<strong>Good girls obey, good girls enjoy, and the moon rises.</strong>",
         "normal"
       )}
+
+      {Img(hypno, "Hypnosis")}
+
       <Typography className="my-3">
         It seems like a weird phrase to use but nothing seems to change for a
         second. Then you notice that the other girls are bent over, showing off
@@ -40,6 +44,7 @@ function Cheerleader(props) {
       </Typography>
 
       {Img(cheer, "Bending over")}
+
       <Typography className="my-3">
         {" "}
         Jill smirks, clearly very pleased.
@@ -58,7 +63,9 @@ function Cheerleader(props) {
         than it would have talking back to Jill with her mountainous tits on
         full display. The cheerleader captain notices and she laughs.
       </Typography>
+
       {Img(jill, "Jill naked")}
+
       {getJill(
         "Looks like you are got quite a bit extra time with Miss Jena, " +
           getNickName(props.variables.nickNames) +
