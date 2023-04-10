@@ -128,7 +128,7 @@ const TherapistMain = (props) => {
           next={() => {
             props.setHypno(hypno + 1);
             props.setArea("evening");
-            props.setNN("Football slut");
+            props.setNN("Football fucktoy");
           }}
         />
       );

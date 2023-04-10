@@ -56,7 +56,7 @@ function Football(props) {
       </Typography>
       {Img(cheer3, "Football team")}
       <Button
-        text="You are introduced to the football team."
+        text="The showers begin."
         fun={() => {
           props.next();
         }}

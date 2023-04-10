@@ -55,16 +55,66 @@ function Football(props) {
         look down and see how far you have come.
       </Typography>
       {Vid("vids/wet.mp4", "video/mp4")}
-      <Typography className="my-3"></Typography>
+      <Typography className="my-3">
+        You feel someone walk behind you, slowly starting to soap up your body,
+        their hands pushing against your frame, exploring you, teasing you. You
+        can feel the soap spreading all over you and the hands seems to focus on
+        your hefty breasts and your pubic mound. Before you know it the hand
+        slides between your legs and you can hear the purr from the stranger as
+        she toys with your puffy slit, while pretending to soap it up nice and
+        thoroughly.
+      </Typography>
       {Img(shower1, "Shower")}
-      {Img(shower2, "Shower")}
+      <Typography className="my-3">
+        With your puffy cunt all soaped up the hands return to your tits,
+        squeezing them and pushing against them. Endlessly molesting and teasing
+        them through the soapy cover. Slowly making sure that those nipples are
+        nice and perky, just begging to be tugged on.
+      </Typography>
       {Img(shower3, "Shower")}
+      <Typography className="my-3">
+        The stranger turns you around and pushes her own tits against yours. The
+        smooth feeling is amazing as soapy mounds meet soapy mounds. Slowly
+        building up the pleasure between your thighs she seems relentless. Her
+        goal is clearly to get as much enjoyment out of your curvy body as
+        possible. You are about to ask her name, but she shuts you up with a
+        kiss, ensuring that the only thing you will remember is the feeling of
+        your tits pushing against each other.
+      </Typography>
+      {Img(shower2, "Shower")}
+      <Typography className="my-3">
+        Without any further warning, the rest of the team pours into the showers
+        and you are right there in the centre of it. You are the focus of the
+        entire football team's pent-up need. You are the one that they want and
+        crave and they show it without mercy. You feel lips against your body
+        all around you, kissing, licking, nibbling.
+      </Typography>
       {Img(shower4, "Shower")}
+      <Typography className="my-3">
+        You are pushed back as the players tease and squeeze you, pushing
+        against you in every way that they can. They want you and they need you,
+        and they are not afraid to show it as the first player pushes her face
+        between your legs. You can hear her moan and feel her eager tongue,
+        slurping away at your needy slit as if she was dying from thirst. You
+        can feel soft bodies against you and lips meet your own, everything
+        turning into a blur.
+      </Typography>
       {Img(shower5, "Shower")}
+      <Typography className="my-3">
+        It doesn't take long before your first orgasm hits, but that doesn't
+        stop the team, they are obsessed with you, craving your soft body and
+        they continue to use you however they please.
+      </Typography>
       {Img(shower6, "Shower")}
-
+      <Typography className="my-3">
+        You have no idea when they finally let you go, but it is hours and the
+        number of orgasms too many to truly count. You are alone on the shower
+        floor, seemingly just a distraction for the football team, just like a
+        proper cheerleader. You feel a sense of pride in your chest as you stand
+        up and head back to your room.
+      </Typography>
       <Button
-        text="You are introduced to the football team."
+        text="Go back to your room"
         fun={() => {
           props.next();
         }}

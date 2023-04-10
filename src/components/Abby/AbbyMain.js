@@ -2,6 +2,7 @@ import { useState } from "react";
 import AbbyCards from "./AbbyCards";
 import AbbyCardsFinish from "./AbbyCardsFinish";
 import AbbyCardsFollowup from "./AbbyCardsFollowup";
+import AbbyChill from "./AbbyChill";
 
 const AbbyMain = (props) => {
   const { variables } = props;
@@ -31,7 +32,6 @@ const AbbyMain = (props) => {
         />
       );
     } else if (time === 3) {
-      console.log("abby3");
       return (
         <AbbyCardsFinish
           {...props}
@@ -43,8 +43,17 @@ const AbbyMain = (props) => {
         />
       );
     }
-  } else if (abby === 2) {
-    return <div></div>;
+  } else if (abby === 1) {
+    return (
+      <AbbyChill
+        {...props}
+        next={() => {
+          props.setAbby(abby + 1);
+          props.setArea("evening");
+          props.setNN("Card cunt");
+        }}
+      />
+    );
   }
 };
 
