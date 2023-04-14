@@ -135,7 +135,7 @@ function Morning(props) {
               onClick={() => {
                 props.abby();
               }}
-              disabled={variables.abby > 1}
+              disabled={variables.abby > 2}
             >
               Hang out with Abby
             </Button>

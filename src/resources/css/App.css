@@ -13,3 +13,20 @@ html { height: 100%; overflow:auto; }
 #boxes{
   display: inline-block;
 }
+.pointer {
+  cursor:pointer;
+}
+
+
+@font-face {
+  font-family: 'rothenburg_decorativeregular';
+  src: url('rothenburg-decorative.regular-webfont.woff2') format('woff2'),
+       url('rothenburg-decorative.regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.writing{
+  font-family: 'rothenburg_decorativeregular';
+}
