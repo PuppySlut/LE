@@ -9,8 +9,6 @@ const MaryMain = (props) => {
   }, 2);
 
   if (Mary === 0) {
-    
-    }
   }
 };
 

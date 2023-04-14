@@ -9,8 +9,6 @@ const PoppyMain = (props) => {
   }, 2);
 
   if (Poppy === 0) {
-    
-    }
   }
 };
 

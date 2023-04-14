@@ -9,8 +9,6 @@ const GuardMain = (props) => {
   }, 2);
 
   if (guard === 0) {
-    
-    }
   }
 };
 
