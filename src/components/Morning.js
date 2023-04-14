@@ -116,18 +116,30 @@ function Morning(props) {
       </Row>
       <Row>
         <Col>
-          <Button
-            fullWidth
-            size="large"
-            variant="contained"
-            className="my-3"
-            onClick={() => {
-              props.abby();
-            }}
-            disabled={variables.abby > 1}
-          >
-            Hang out with Abby
-          </Button>
+          {variables.abby > 1 && !variables.romanceAbby ? (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              disabled={true}
+            >
+              You have decided not to romance Abby
+            </Button>
+          ) : (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              onClick={() => {
+                props.abby();
+              }}
+              disabled={variables.abby > 1}
+            >
+              Hang out with Abby
+            </Button>
+          )}
         </Col>
         <Col>
           <Button

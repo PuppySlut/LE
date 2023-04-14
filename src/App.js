@@ -32,6 +32,7 @@ function App() {
   const [headOp, setHeadOp] = useState(0);
   const [nurse, setNurse] = useState(0);
   const [abby, setAbby] = useState(0);
+  const [romanceAbby, setRomanceAbby] = useState(false);
 
   useState(() => {
     window.scrollTo({
@@ -63,6 +64,7 @@ function App() {
     nickNames: nickNames,
     hypno: hypno,
     claimed: claimed,
+    romanceAbby: romanceAbby,
   };
 
   switch (area) {
@@ -140,6 +142,9 @@ function App() {
           }}
           setNN={(n) => {
             setNN(n);
+          }}
+          setRomanceAbby={(i) => {
+            setRomanceAbby(i);
           }}
         />
       );

@@ -8,6 +8,7 @@ import nurse from "./../resources/img/cosplay/3.jpg";
 import mary from "../resources/img/mary.webp";
 import mary2 from "../resources/img/mary2.webp";
 import abby from "../resources/img/abby.webp";
+import abbychill from "../resources/img/abby2.webp";
 import chef1 from "../resources/img/chef1.webp";
 import chef2 from "../resources/img/chef2.webp";
 import teddy from "../resources/img/teddy.jpg";
@@ -693,7 +694,9 @@ export const getAbby = (text, mood) => {
         </Col>
         <Col xs={3}>
           <Image
-            src={mood === "naked" ? abbyNaked : abby}
+            src={
+              mood === "naked" ? abbyNaked : mood === "chill" ? abbychill : abby
+            }
             className="mx-auto d-block"
             alt="Abby"
             fluid
