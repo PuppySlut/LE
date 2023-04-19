@@ -12,7 +12,15 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.fade-in {
+  transition: opacity 1.5s ease;
+}.fade-out {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+.pointer {
+  cursor:pointer;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,6 +43,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+@font-face {
+  font-family: 'rothenburg_decorativeregular';
+  src: url('rothenburg-decorative.regular-webfont.woff2') format('woff2'),
+       url('rothenburg-decorative.regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.writing{
+  font-family: 'rothenburg_decorativeregular';
 }
 
 html { position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: auto; }

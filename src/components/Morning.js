@@ -61,18 +61,43 @@ function Morning(props) {
           </Button>
         </Col>
         <Col>
-          <Button
-            fullWidth
-            size="large"
-            variant="contained"
-            className="my-3"
-            onClick={() => {
-              props.therapist();
-            }}
-            disabled={variables.hypno > 1}
-          >
-            Visit the therapist
-          </Button>
+          {variables.hypno === 2 && variables.wetvalleyOp < 3 ? (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              disabled={true}
+            >
+              Maybe you should explore some of your classes?
+            </Button>
+          ) : variables.hypno > 2 ? (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              onClick={() => {
+                props.therapist();
+              }}
+              disabled={variables.hypno > 3}
+            >
+              Go to the cheerleader training
+            </Button>
+          ) : (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              onClick={() => {
+                props.therapist();
+              }}
+              disabled={variables.hypno > 2}
+            >
+              Visit the therapist
+            </Button>
+          )}
         </Col>
         <Col>
           <Button
@@ -91,32 +116,56 @@ function Morning(props) {
       </Row>
       <Row>
         <Col>
-          <Button
-            fullWidth
-            size="large"
-            variant="contained"
-            className="my-3"
-            onClick={() => {
-              props.abby();
-            }}
-            disabled={variables.abby > 0}
-          >
-            Hang out with Abby
-          </Button>
+          {variables.abby > 1 && !variables.romanceAbby ? (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              disabled={true}
+            >
+              You have decided not to romance Abby
+            </Button>
+          ) : (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              onClick={() => {
+                props.abby();
+              }}
+              disabled={variables.abby > 2}
+            >
+              Hang out with Abby
+            </Button>
+          )}
         </Col>
         <Col>
-          <Button
-            fullWidth
-            size="large"
-            variant="contained"
-            className="my-3"
-            disabled
-            onClick={() => {
-              props.poppy();
-            }}
-          >
-            Hang out with Poppy
-          </Button>
+          {!variables.romancePoppy && variables.poppy > 0 ? (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              disabled={true}
+            >
+              You have decided not to persue Poppy
+            </Button>
+          ) : (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              disabled={variables.poppy > 0}
+              onClick={() => {
+                props.poppy();
+              }}
+            >
+              Hang out with Poppy
+            </Button>
+          )}
         </Col>
         <Col>
           <Button

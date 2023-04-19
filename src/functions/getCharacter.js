@@ -8,6 +8,7 @@ import nurse from "./../resources/img/cosplay/3.jpg";
 import mary from "../resources/img/mary.webp";
 import mary2 from "../resources/img/mary2.webp";
 import abby from "../resources/img/abby.webp";
+import abbychill from "../resources/img/abby2.webp";
 import chef1 from "../resources/img/chef1.webp";
 import chef2 from "../resources/img/chef2.webp";
 import teddy from "../resources/img/teddy.jpg";
@@ -47,6 +48,11 @@ import "@fontsource/mochiy-pop-one";
 import "@fontsource/milonga";
 import "@fontsource/oleo-script";
 import { Vid } from "../elements/Video";
+import jill from "./../resources/img/Jill.jpg";
+import jill2 from "./../resources/img/jill2.jpg";
+import jill3 from "./../resources/img/jill3.jpg";
+import rose from "./../resources/img/rose.jpg";
+import DeLipps from "./../resources/img/De Lipps.jpg";
 
 export const getSec = (text, mood) => {
   return (
@@ -104,6 +110,87 @@ export const getSec = (text, mood) => {
             fluid
             roundedCircle
           />
+        </Col>
+        <Col xs={1}></Col>
+      </Row>
+    </Box>
+  );
+};
+
+export const getJill = (text, mood) => {
+  return (
+    <Box
+      sx={{
+        backgroundColor: "#3A476C",
+        boxShadow: 1,
+        border: 4,
+        borderRadius: 4,
+        p: 2,
+        m: 2,
+        borderColor: "#EEABC4",
+      }}
+    >
+      <Row>
+        <Col>
+          <Box
+            sx={{
+              backgroundColor: "#90A9B7",
+              borderRadius: 4,
+              p: 2,
+              m: 2,
+            }}
+          >
+            <Typography
+              variant="h6"
+              className="text-center"
+              sx={{
+                color: "#e2fcef",
+                fontFamily: "baskervville",
+              }}
+            >
+              Jill
+            </Typography>
+          </Box>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Typography
+            className="text-center"
+            sx={{
+              color: "#EFE039",
+              fontFamily: "baskervville",
+            }}
+          >
+            {text}
+          </Typography>
+        </Col>
+        <Col xs={3}>
+          {mood === "naked" ? (
+            <Image
+              src={jill2}
+              className="mx-auto d-block"
+              alt="Jill"
+              fluid
+              roundedCircle
+            />
+          ) : mood === "student" ? (
+            <Image
+              src={jill3}
+              className="mx-auto d-block"
+              alt="Jill"
+              fluid
+              roundedCircle
+            />
+          ) : (
+            <Image
+              src={jill}
+              className="mx-auto d-block"
+              alt="Jill"
+              fluid
+              roundedCircle
+            />
+          )}
         </Col>
         <Col xs={1}></Col>
       </Row>
@@ -608,7 +695,9 @@ export const getAbby = (text, mood) => {
         </Col>
         <Col xs={3}>
           <Image
-            src={mood === "naked" ? abbyNaked : abby}
+            src={
+              mood === "naked" ? abbyNaked : mood === "chill" ? abbychill : abby
+            }
             className="mx-auto d-block"
             alt="Abby"
             fluid
@@ -672,6 +761,69 @@ export const getPoppy = (text, mood) => {
         <Col xs={3}>
           <Image
             src={poppy}
+            className="mx-auto d-block"
+            alt="Poppy"
+            fluid
+            roundedCircle
+          />
+        </Col>
+        <Col xs={1}></Col>
+      </Row>
+    </Box>
+  );
+};
+
+export const getDeLipps = (text, mood) => {
+  return (
+    <Box
+      sx={{
+        backgroundColor: "#F96167",
+        boxShadow: 1,
+        border: 4,
+        borderRadius: 4,
+        p: 2,
+        m: 2,
+        borderColor: "FCE77D",
+      }}
+    >
+      <Row>
+        <Col>
+          <Box
+            sx={{
+              backgroundColor: "#FCE77D",
+              borderRadius: 4,
+              p: 2,
+              m: 2,
+            }}
+          >
+            <Typography
+              variant="h6"
+              className="text-center"
+              sx={{
+                color: "#F96167",
+                fontFamily: "Purple Purse",
+              }}
+            >
+              Professor De Lipps
+            </Typography>
+          </Box>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Typography
+            className="text-center"
+            sx={{
+              color: "#FCE77D",
+              fontFamily: "Purple Purse",
+            }}
+          >
+            {text}
+          </Typography>
+        </Col>
+        <Col xs={3}>
+          <Image
+            src={DeLipps}
             className="mx-auto d-block"
             alt="Poppy"
             fluid
@@ -1388,6 +1540,68 @@ export const getTeddy = (text, mood) => {
             src={teddy}
             className="mx-auto d-block"
             alt="Secretary"
+            fluid
+            roundedCircle
+          />
+        </Col>
+        <Col xs={1}></Col>
+      </Row>
+    </Box>
+  );
+};
+export const getRose = (text, mood) => {
+  return (
+    <Box
+      sx={{
+        backgroundColor: "#264653",
+        boxShadow: 1,
+        border: 4,
+        borderRadius: 4,
+        p: 2,
+        m: 2,
+        borderColor: "#e76f51",
+      }}
+    >
+      <Row>
+        <Col>
+          <Box
+            sx={{
+              backgroundColor: "#2a9d8f",
+              borderRadius: 4,
+              p: 2,
+              m: 2,
+            }}
+          >
+            <Typography
+              variant="h6"
+              className="text-center"
+              sx={{
+                color: "#e9c46a",
+                fontFamily: "Emilys Candy",
+              }}
+            >
+              Rose
+            </Typography>
+          </Box>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Typography
+            className="text-center"
+            sx={{
+              color: "#e9c46a",
+              fontFamily: "Emilys Candy",
+            }}
+          >
+            {text}
+          </Typography>
+        </Col>
+        <Col xs={3}>
+          <Image
+            src={rose}
+            className="mx-auto d-block"
+            alt="Random Student"
             fluid
             roundedCircle
           />
