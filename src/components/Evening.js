@@ -280,7 +280,7 @@ function Evening(props) {
           />
         </Container>
       );
-    } else if (check < 3) {
+    } else if (check < 3 && variables.romancePoppy) {
       return (
         <Container>
           <Typography className="my-3">
