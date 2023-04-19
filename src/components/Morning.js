@@ -142,18 +142,30 @@ function Morning(props) {
           )}
         </Col>
         <Col>
-          <Button
-            fullWidth
-            size="large"
-            variant="contained"
-            className="my-3"
-            disabled
-            onClick={() => {
-              props.poppy();
-            }}
-          >
-            Hang out with Poppy
-          </Button>
+          {!variables.romancePoppy && variables.poppy > 0 ? (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              disabled={true}
+            >
+              You have decided not to persue Poppy
+            </Button>
+          ) : (
+            <Button
+              fullWidth
+              size="large"
+              variant="contained"
+              className="my-3"
+              disabled={variables.poppy > 0}
+              onClick={() => {
+                props.poppy();
+              }}
+            >
+              Hang out with Poppy
+            </Button>
+          )}
         </Col>
         <Col>
           <Button

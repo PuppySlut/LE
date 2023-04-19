@@ -13,6 +13,7 @@ import NurseMain from "./components/Nurse/NurseMain";
 import TherapistMain from "./components/Therapist/TherapistMain";
 import Layout from "./components/Layout";
 import AbbyMain from "./components/Abby/AbbyMain";
+import PoppyMain from "./components/Poppy/PoppyMain";
 
 function App() {
   const [area, setArea] = useState("landing"); //"landing"
@@ -33,6 +34,8 @@ function App() {
   const [nurse, setNurse] = useState(0);
   const [abby, setAbby] = useState(0);
   const [romanceAbby, setRomanceAbby] = useState(false);
+  const [poppy, setPoppy] = useState(0);
+  const [romancePoppy, setRomancePoppy] = useState(false);
 
   useState(() => {
     window.scrollTo({
@@ -65,6 +68,8 @@ function App() {
     hypno: hypno,
     claimed: claimed,
     romanceAbby: romanceAbby,
+    romancePoppy: romancePoppy,
+    poppy: poppy,
   };
 
   switch (area) {
@@ -126,6 +131,25 @@ function App() {
           }}
           setNN={(n) => {
             setNN(n);
+          }}
+        />
+      );
+      break;
+    case "poppy":
+      output = (
+        <PoppyMain
+          variables={variables}
+          setPoppy={(i) => {
+            setPoppy(i);
+          }}
+          setArea={(a) => {
+            setArea(a);
+          }}
+          setNN={(n) => {
+            setNN(n);
+          }}
+          setRomancePoppy={(i) => {
+            setRomancePoppy(i);
           }}
         />
       );

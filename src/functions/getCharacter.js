@@ -52,6 +52,7 @@ import jill from "./../resources/img/Jill.jpg";
 import jill2 from "./../resources/img/jill2.jpg";
 import jill3 from "./../resources/img/jill3.jpg";
 import rose from "./../resources/img/rose.jpg";
+import DeLipps from "./../resources/img/De Lipps.jpg";
 
 export const getSec = (text, mood) => {
   return (
@@ -760,6 +761,69 @@ export const getPoppy = (text, mood) => {
         <Col xs={3}>
           <Image
             src={poppy}
+            className="mx-auto d-block"
+            alt="Poppy"
+            fluid
+            roundedCircle
+          />
+        </Col>
+        <Col xs={1}></Col>
+      </Row>
+    </Box>
+  );
+};
+
+export const getDeLipps = (text, mood) => {
+  return (
+    <Box
+      sx={{
+        backgroundColor: "#F96167",
+        boxShadow: 1,
+        border: 4,
+        borderRadius: 4,
+        p: 2,
+        m: 2,
+        borderColor: "FCE77D",
+      }}
+    >
+      <Row>
+        <Col>
+          <Box
+            sx={{
+              backgroundColor: "#FCE77D",
+              borderRadius: 4,
+              p: 2,
+              m: 2,
+            }}
+          >
+            <Typography
+              variant="h6"
+              className="text-center"
+              sx={{
+                color: "#F96167",
+                fontFamily: "Purple Purse",
+              }}
+            >
+              Professor De Lipps
+            </Typography>
+          </Box>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Typography
+            className="text-center"
+            sx={{
+              color: "#FCE77D",
+              fontFamily: "Purple Purse",
+            }}
+          >
+            {text}
+          </Typography>
+        </Col>
+        <Col xs={3}>
+          <Image
+            src={DeLipps}
             className="mx-auto d-block"
             alt="Poppy"
             fluid
